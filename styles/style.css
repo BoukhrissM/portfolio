@@ -37,8 +37,6 @@
     flex-wrap: nowrap;
     flex-direction: row;
     margin-top: 3rem;
-}.nameArea{
-    
 }
 .pictureArea{
     display: flex;
