@@ -1,0 +1,349 @@
+/* Imports Begin  */
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&family=Montserrat:wght@400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+/* Imports End  */
+
+/* Modification of animate duration  BEGIN*/
+.animate__animated
+.animate__zoomInUp {
+    --animate-duration: .4s !important;
+  }
+
+ .animate__animated
+ .animate__bounceIn {
+    --animate-duration: 2s !important;
+  }
+
+  /* Modification END*/
+
+
+*{
+    scroll-behavior: smooth;
+    user-select: none;
+}
+.introduction{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 3rem;
+}.nameArea{
+    
+}
+.pictureArea{
+    display: flex;
+    justify-content: center;
+    clip-path: circle(50% at 50% 50%);
+    transition: .2s ease-in-out;
+    
+}
+/* .pictureArea:hover{
+    transform: scale(1.13);
+    transition: .2s ease-in-out;
+} */
+#profilePic{
+    position: relative;
+    width: 320px;
+    transition: .2s ease-in-out;
+    cursor: none;
+    user-select: none;
+}
+.name{
+    /* font-family: 'Anton', sans-serif; */
+    font-family: 'Teko', sans-serif;
+    font-size: 65px;
+    letter-spacing: 4px;
+    color: #3142db;
+    line-height: 45px;
+    user-select: none;
+    transition: .2s ease-in-out;
+}
+.span1{
+    color: #3142db;
+    transition: .2s ease-in-out;
+}
+.name .span2{
+    color: black;
+    top: -10px;
+    transition: .2s ease-in-out;
+}
+
+
+.professionalisme{
+    display: flex;
+    margin-top: 10px;
+}
+.infosPerso{
+    width: 40%;
+}
+.titre{
+    color: #3142db;
+    font-family: 'Exo 2', sans-serif;
+}
+.language{
+    margin-top: 15px;
+}
+.language ul li{
+    color: black;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.item{
+    display: flex;
+    position: relative;
+    width: auto;
+    height: 35px;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    
+}
+.item a{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    transition: .2s ease-in-out;
+}
+.iconcirle{
+    width: 25px;
+    height: 25px;
+    background-color: #3142db;
+    clip-path: circle(50% at 50% 50%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-content{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+.item-content p,.language ul li{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+.education-item{
+    position:relative;
+    width: 100%;
+    /* background-color: red; */
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    transition: .3s ease-in-out;
+}
+.education-item:hover{
+    transform: scale(1.03);
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.education{
+    margin-right: 10px;
+    width: 75% !important;
+    height: 25% !important;
+}
+.iconLine{
+    position: relative;
+    width: 70px;
+    
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    position: relative;
+    width: 55px;
+    height: 55px;
+    clip-path: circle(50% at 50% 50%);
+    background-color: #3142db;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 30px;
+}
+.educationContent{
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-left: 10px;
+    /* background-color: darkred; */
+}
+.line{
+    position: relative;
+    margin-top: 5px;
+    width: 4px;
+    height: 40%;
+    background-color: #3142db;
+    border-radius: 5px;
+}
+.degree{
+    font-size: 20px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+.institut{
+    font-size: 20px;
+    color: #3142db;
+    font-family: 'Oswald', sans-serif;
+}
+.date{
+    font-size: 20px;
+    color: #7480ee;
+    font-family: 'Raleway', sans-serif;
+}
+.contentList ul li{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    color: black;
+}
+.experiences{
+    margin-top: 15px;
+}
+.competences{
+    margin-top: 10px;
+}
+.competences ul li{
+    font-size: 20px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+}
+
+.contact2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.contact2 .item{
+    margin: 10px 0 10px 10px;
+    
+}
+.btn-download{
+    width: 25%;
+    background-color: #3142db !important;
+    
+}
+.btn-download span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    text-transform: lowercase;
+    margin-left: 5px;
+}
+
+
+@media screen and (max-width: 991px) {
+    
+    .iconcirle,.item-content{
+      font-size: 12px !important;
+    }
+    .contact2 .item{
+        position: relative;
+        width: 60%;
+        margin: 0;
+    }
+    .contact2{
+        flex-direction: column;
+        margin: 0 !important;
+        line-height: 10px;
+        /* justify-content: center; */
+        align-items: flex-end;
+        
+    }
+    .btn-download{
+        width: 30% !important;
+        margin-left: 75px;
+    }
+  }
+
+
+
+  @media screen and (max-width: 771px) {
+    
+    .introduction{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px !important;
+    }
+    .btn-download{
+        width: 45% !important;
+        margin-left: 30px;
+    }
+    .contact2 .item{
+        width: 70%;
+    }
+    .pictureArea{
+        clip-path: circle(45% at 50% 50%) !important;
+        order: 1 !important;
+    }
+    .nameArea{
+        position: relative;
+        /* width: 100%; */
+        order: 2 !important;
+        /* background-color: rebeccapurple; */
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .professionalisme{
+        flex-direction: column;
+        
+        width: 100% !important;
+        
+    }
+    .infosPerso{
+        order: 1;
+        width: 100% !important;
+    }
+    .education{
+        position: relative;
+        order: 2;
+        
+        width: 100% !important;
+    }
+    
+    .contact .item-content{
+        font-size: 15px !important;
+        /* background-color: rebeccapurple; */
+        width: 100% !important;
+    }
+    .education .education-item{
+        width: 100% !important;
+        /* background-color: rebeccapurple; */
+    }
+  }
+
+
+
+  @media screen and (max-width: 420px){
+    .contact2 .item{
+        /* background-color: rebeccapurple; */
+        width: 90%;
+    }
+    .btn-download{
+        width: 90% !important;
+    }
+  }
